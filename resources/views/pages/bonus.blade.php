@@ -21,10 +21,10 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1>{{ $greeting . ' ' . $name}}</h1>
+        <h1>{{ $bonus }}</h1>
         <nav>
             <ul>
-                <li><a href="{{ route('bonus') }}">bonus</a></li>
+                <li><a href="{{ route('home') }}">home</a></li>
             </ul>
         </nav>
     </body>

@@ -17,6 +17,16 @@ Route::get('/', function () {
     $data = [
         'greeting' => 'Hello',
         'name' => 'Laravel',
+        'bonus' => 'bonus',
     ];
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/pages.bonus', function () {
+    $data = [
+        'greeting' => 'Hello',
+        'name' => 'Laravel',
+        'bonus' => 'bonus',
+    ];
+    return view('pages.bonus', $data);
+})->name('bonus');
